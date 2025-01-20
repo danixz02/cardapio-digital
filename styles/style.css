@@ -125,7 +125,7 @@ h2 {
     padding: 15px;
 }
 
-.card-content .card-title{
+.card-content .carTitle{
     font-size: 1.4em;
     color: #333;
     margin: 0;
@@ -137,7 +137,7 @@ h2 {
     margin: 10px 0;
 }
 
-.card-content .valor {
+.card-content .cardValor {
     
     font-size: 1.4em;
     font-weight: bold;

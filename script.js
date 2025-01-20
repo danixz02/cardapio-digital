@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
         lancheCard.style.display = ""; // Mostra o card
 
         // Preenche as informações no card
-        lancheCard.querySelector(".card-img").src = lanche.imagem;
-        lancheCard.querySelector(".card-img").alt = lanche.nome;
-        lancheCard.querySelector(".card-title").textContent = lanche.nome;
+        lancheCard.querySelector(".cardImg").src = lanche.imagem;
+        lancheCard.querySelector(".cardImg").alt = lanche.nome;
+        lancheCard.querySelector(".cardTitle").textContent = lanche.nome;
         lancheCard.querySelector(
-          ".card-ingredientes"
+          ".cardIngredientes"
         ).innerHTML = `Ingredientes: <br>${lanche.ingredientes.join(", ")}`;
-        lancheCard.querySelector(".valor").textContent = lanche.valor;
+        lancheCard.querySelector(".cardValor").textContent = lanche.valor;
 
         // Adiciona o card preenchido na lista
         lanchesSection.appendChild(lancheCard);
