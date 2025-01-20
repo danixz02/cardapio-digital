@@ -1,0 +1,74 @@
+{
+    "cardapio": {
+      "lanches": [
+        {
+          "imagem":"./assets/xburguer.png",
+          "nome": "X-Burger",
+          "ingredientes": ["pão", "hambúrguer", "queijo", "alface", "tomate", "maionese"],
+          "valor": "R$ 18,50"
+        },
+        {
+          "imagem":"./assets/xburguer.png",
+          "nome": "X-Tudo",
+          "ingredientes": ["pão", "hambúrguer", "queijo", "bacon", "ovo", "alface", "tomate", "maionese"],
+          "valor": "R$ 22,00"
+        },
+        {
+          "imagem":"./assets/xburguer.png",
+          "nome": "X-Frango",
+          "ingredientes": ["pão", "filé de frango", "queijo", "alface", "tomate", "maionese"],
+          "valor": "R$ 20,00"
+        }
+      ],
+      "porcoes": [
+        {
+          "nome": "Porção de Fritas",
+          "ingredientes": ["batata", "óleo", "sal"],
+          "valor": "R$ 12,00"
+        },
+        {
+          "nome": "Porção de Onion Rings",
+          "ingredientes": ["cebola", "massa empanada", "óleo"],
+          "valor": "R$ 15,00"
+        },
+        {
+          "nome": "Porção de Batata Doce",
+          "ingredientes": ["batata doce", "óleo", "sal"],
+          "valor": "R$ 14,00"
+        }
+      ],
+      "bebidasAlcoolicas": [
+        {
+          "nome": "Cerveja Lata",
+          "valor": "R$ 7,00"
+        },
+        {
+          "nome": "Caipirinha",
+          "valor": "R$ 15,00"
+        },
+        {
+          "nome": "Vodka",
+          "valor": "R$ 18,00"
+        }
+      ],
+      "bebidasNaoAlcoolicas": [
+        {
+          "nome": "Refrigerante Lata",
+          "valor": "R$ 5,00"
+        },
+        {
+          "nome": "Suco Natural",
+          "valor": "R$ 8,00"
+        },
+        {
+          "nome": "Água Mineral",
+          "valor": "R$ 3,00"
+        }
+      ],
+      "mais_pedidos": [
+        "X-Tudo",
+        "Porção de Fritas",
+        "Cerveja Lata"
+      ]
+    }
+  }

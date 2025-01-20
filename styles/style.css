@@ -1,0 +1,161 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Nav Bar */
+
+#logo {
+    width: 60px;
+    mix-blend-mode: difference;
+    filter: invert(4);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #594531;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    padding: 6px;
+    text-align: center;
+    color: aliceblue;
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+    color: #4c3c26;
+    transition: 0.3s;
+}
+
+/* banner */
+
+#banner img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 12rem;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+/* ================= */
+
+/* Contêiner do carrossel */
+#carousel-container {
+    overflow: hidden; /* Esconde os itens fora do contêiner */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  /* Carrossel (linha de cards) */
+  #carousel {
+    display: flex;
+    gap: 15px;
+    cursor: grab; /* Mostra o ícone de "arrastar" */
+    transition: transform 0.3s ease; /* Animação suave */
+  }
+  
+
+/* =============== */
+h2 {
+    padding: 16px;
+}
+
+#listaLanches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+   
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+     /* transition: transform 0.3s ease;  */
+}
+
+/* .card:hover {
+    transform: translateY(-10px);
+} */
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content .card-title{
+    font-size: 1.4em;
+    color: #333;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.card-content .valor {
+    
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2d9f77;
+}
+
+.addBtn {
+    background-color: #2d9f77;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: #195a43;
+}
+
