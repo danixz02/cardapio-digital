@@ -161,27 +161,3 @@ h2 {
 .addBtn:hover {
     background-color: #195a43;
 }
-
-
-@media  screen and (max-width: 375px) {
-    .card {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        width: 46%;
-    }
-    
-
-
-    }
-
-    #listaLanches {
-        display: flex;
-        align-items: center;
-        background-color: #195a43;
-        justify-content: center;
-        flex-wrap: wrap;
-        border-radius: 10px;
-    }   
-    
-}
