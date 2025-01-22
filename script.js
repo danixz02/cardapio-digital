@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         lancheCard.querySelector(".card-img").src = lanche.imagem;
         lancheCard.querySelector(".card-img").alt = lanche.nome;
         lancheCard.querySelector(".card-title").textContent = lanche.nome;
-       /*  lancheCard.querySelector(
-          ".card-ingredientes"
-        ).innerHTML = `Ingredientes: <br>${lanche.ingredientes.join(", ")}`;
-        lancheCard.querySelector(".valor").textContent = lanche.valor; */
+        lancheCard.querySelector(".card-ingredientes").innerHTML = `Ingredientes: <br>
+        ${lanche.ingredientes.join(", ")}`;
+        lancheCard.querySelector(".valor").textContent = lanche.valor;
 
         // Adiciona o card preenchido na lista
         lanchesSection.appendChild(lancheCard);
