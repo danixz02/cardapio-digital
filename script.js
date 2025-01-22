@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const templateCard = document.querySelector(".card.template");
 
       data.cardapio.lanches.forEach((lanche) => {
-        // Clone da estrutura do card existente no HTML
+        
         const lancheCard = templateCard.cloneNode(true);
         lancheCard.classList.remove("template"); // Remove a classe que oculta o card
         lancheCard.style.display = ""; // Mostra o card
@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         lancheCard.querySelector(".cardImg").src = lanche.imagem;
         lancheCard.querySelector(".cardImg").alt = lanche.nome;
         lancheCard.querySelector(".cardTitle").textContent = lanche.nome;
-        lancheCard.querySelector(
-          ".cardIngredientes"
-        ).innerHTML = `Ingredientes: <br>${lanche.ingredientes.join(", ")}`;
-        lancheCard.querySelector(".cardValor").textContent = lanche.valor;
+        /* lancheCard.querySelector(".cardIngredientes").innerHTML = `Ingredientes: <br>
+        ${lanche.ingredientes.join(", ")}`;
+        lancheCard.querySelector(".cardValor").textContent = lanche.valor; */
 
         // Adiciona o card preenchido na lista
         lanchesSection.appendChild(lancheCard);
