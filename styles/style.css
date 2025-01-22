@@ -162,3 +162,83 @@ h2 {
     background-color: #195a43;
 }
 
+
+@media screen and (min-width: 388px) {
+    
+#listaLanches {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 28px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+   
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 250px; - View desktop*/
+    width: 169px;
+    overflow: hidden;
+     /* transition: transform 0.3s ease;  */
+}
+
+/* .card:hover {
+    transform: translateY(-10px);
+} */
+
+.card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content .carTitle{
+    font-size: 1.4em;
+    color: #333;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.card-content .cardValor {
+    
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2d9f77;
+}
+
+.addBtn {
+    background-color: #2d9f77;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: #195a43;
+}
+
+
+    
+}
