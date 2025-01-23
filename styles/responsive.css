@@ -47,4 +47,10 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    #listaLanches{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 }
