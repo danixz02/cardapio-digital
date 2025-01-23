@@ -1,0 +1,50 @@
+
+@media only screen and (max-width: 768px) {
+    .navMenu {
+        position: fixed;
+        left: 100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #704c3b;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navLink {
+        display: block;
+        width: 100vw;
+        padding: 30px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+
+    .navItem {
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
