@@ -49,6 +49,7 @@
 
     #listaLanches{
         display: flex;
+        margin: 8.2px;
         flex-direction: row;
         flex-wrap: wrap;
     }
