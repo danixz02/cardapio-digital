@@ -48,10 +48,22 @@
     }
 
     #listaLanches{
-        display: flex;
+ /*        display: flex; */
         margin: 8.2px;
-        flex-direction: row;
-        flex-wrap: wrap;
+     /*    flex-direction: row;
+        flex-wrap: wrap; */
     }
 
+    .card{
+        flex: 0 0 auto; 
+        width: 214px; 
+        height: 250px;
+        text-align: center;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    .addBtn{
+        font-size: 1rem;
+    }
 }
