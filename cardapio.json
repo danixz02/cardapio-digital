@@ -39,14 +39,17 @@
       ],
       "bebidasAlcoolicas": [
         {
+          "imagem":"./assets/xburguer.png",
           "nome": "Cerveja Lata",
           "valor": "R$ 7,00"
         },
         {
+          "imagem":"./assets/xburguer.png",
           "nome": "Caipirinha",
           "valor": "R$ 15,00"
         },
         {
+          "imagem":"./assets/xburguer.png",
           "nome": "Vodka",
           "valor": "R$ 18,00"
         }
