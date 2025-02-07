@@ -23,7 +23,6 @@ a {
 
 /* Navbar */
 .header {
-    border-bottom: 1px solid #E2E8F0;
     background-color: #704c3b;
 }
 
@@ -51,7 +50,7 @@ a {
 .navMenu {
     display: flex;
     align-items: center;
-    margin-right: 15px;
+/*     margin-right: 15px; */
 }
 
 .navItem {
@@ -80,14 +79,22 @@ a {
 }
 /* banner */
 
-#banner img {
+#banner span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    height: 12rem;
-    margin: 15px auto;
-    border-radius: 4px;
+    width: 100%;
+    height: 19rem;
+
+
+    background-color: #353535;
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: #363636;
+    margin: 20px 15px 0;
 }
 
 /* .addBtn {
@@ -106,3 +113,120 @@ a {
     background-color: #195a43;
 }
  */
+
+ .carousel-container {
+    position: relative;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.cardsLanche {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+ .card {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card-content .valor {
+    font-size: 16px;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+ .addBtn {
+    background-color: #2d9f77;
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+#verMais {
+    float: right;
+    margin-right: 14px;
+    height: 21px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    color: #2d9f77;
+}
+
+
+ #verMais:hover {
+    border-bottom: 1px solid #2d9f77;
+}
+
+#prevBtn, #nextBtn {    
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;;
+    font-size: 20px;
+    border-radius: 5px;
+} 
+
+.controls {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    justify-content: space-between;
+}
+
+#prevBtn {
+   margin-left: 10px;
+}
+
+#nextBtn {
+    margin-right: 10px;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    transition: .3s;
+    background: rgba(14, 14, 14, 0.849);
+}

@@ -17,6 +17,28 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let scrollAmount = 0;
+const scrollStep = 270; // Define o quanto rola para cada clique
+
+nextBtn.addEventListener('click', () => {
+    scrollAmount += scrollStep;
+    if (scrollAmount > carousel.scrollWidth - carousel.clientWidth) {
+        scrollAmount = 0;
+    }
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
+});
+
+prevBtn.addEventListener('click', () => {
+    scrollAmount -= scrollStep;
+    if (scrollAmount < 0) {
+        scrollAmount = 0;
+    }
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
