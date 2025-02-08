@@ -35,6 +35,20 @@
         margin-right: 10px;
     }
 
+
+    #banner span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10rem;
+    
+    
+        background-color: #353535;
+    
+    }
+
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
