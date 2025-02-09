@@ -35,6 +35,11 @@
         margin-right: 10px;
     }
 
+    #lanches {
+        padding: 8px;
+    }
+
+ 
 
     #banner span {
         display: flex;
@@ -42,10 +47,7 @@
         align-items: center;
         width: 100%;
         height: 10rem;
-    
-    
         background-color: #353535;
-    
     }
 
 

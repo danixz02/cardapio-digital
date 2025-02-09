@@ -1,232 +1,216 @@
 /* Reset CSS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Navbar */
 .header {
-    background-color: #704c3b;
+  background-color: #704c3b;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
 }
 
 .navMenu {
-    display: flex;
-    align-items: center;
-/*     margin-right: 15px; */
+  display: flex;
+  align-items: center;
+  /*     margin-right: 15px; */
 }
 
 .navItem {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .navLink {
-    font-size: 1.1rem;
-    color: #fff;
-    padding: 6px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .navLink:hover {
-    color: #704c3b;
-    background-color: #fff;
+  color: #704c3b;
+  background-color: #fff;
 }
 
 .navLogo {
-    margin-left: 6px;
-    font-size: 3rem;
-    font-weight: 500;
-    /* color: #482ff7; */
-    color: #fff;
+  margin-left: 6px;
+  font-size: 3rem;
+  font-weight: 500;
+  /* color: #482ff7; */
+  color: #fff;
 }
 /* banner */
 
 #banner span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 19rem;
-
-
-    background-color: #353535;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 19rem;
+  background-color: #353535;
 }
 
 h1 {
-    font-size: 2rem;
-    color: #363636;
-    margin: 20px 15px 0;
+  font-size: 2rem;
+  color: #363636;
+  margin: 20px 15px 0;
 }
 
-/* .addBtn {
-    background-color: #2d9f77;
-    font-size: 1rem;
-    width: 100%;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.addBtn:hover {
-    background-color: #195a43;
-}
- */
-
- .carousel-container {
-    position: relative;
-    width: 98%;
-    margin: auto;
-    overflow: hidden;
+.carousel-container {
+  position: relative;
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .carousel {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
 }
-
 
 .cardsLanche {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
- .card {
-    flex: 0 0 auto;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    margin: 12px;
-    transition: transform 0.3s ease;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .card-content {
-    padding: 15px;
-  }
-  
-  .card-content h3 {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .card-content .valor {
-    font-size: 16px;
-    color: #007BFF;
-    font-weight: bold;
-  }
-  
- .addBtn {
-    background-color: #2d9f77;
-    font-size: 1rem;
-    width: 100%;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  margin: 12px;
+  transition: transform 0.3s ease;
+}
 
-  .text {
-    display: flex;
-    justify-content: space-between;
-  }
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-content .valor {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.addBtn {
+  background-color: #2d9f77;
+  font-size: 1rem;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#lanches > .carousel > .card  {
+    margin: 24px;
+}
 
 #verMais {
-    float: right;
-    margin-right: 14px;
-    height: 21px;
-    align-self: flex-end;
-    justify-content: flex-end;
-    color: #2d9f77;
+  float: right;
+  margin-right: 14px;
+  height: 21px;
+  align-self: flex-end;
+  justify-content: flex-end;
+  color: #2d9f77;
 }
 
-
- #verMais:hover {
-    border-bottom: 1px solid #2d9f77;
+#verMais:hover {
+  border-bottom: 1px solid #2d9f77;
 }
 
-#prevBtn, #nextBtn {    
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;;
-    font-size: 20px;
-    border-radius: 5px;
-} 
+#prevBtn,
+#nextBtn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
 
 .controls {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    justify-content: space-between;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  justify-content: space-between;
 }
 
 #prevBtn {
-   margin-left: 10px;
+  margin-left: 10px;
 }
 
 #nextBtn {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-#prevBtn:hover, #nextBtn:hover {
-    transition: .3s;
-    background: rgba(14, 14, 14, 0.849);
+#prevBtn:hover,
+#nextBtn:hover {
+  transition: 0.3s;
+  background: rgba(14, 14, 14, 0.849);
 }
