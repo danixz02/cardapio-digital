@@ -22,7 +22,7 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 let scrollAmount = 0;
-const scrollStep = 210;  // Define o quanto rola para cada clique
+const scrollStep = 212;  // Define o quanto rola para cada clique
 
 nextBtn.addEventListener('click', () => {
     scrollAmount += scrollStep;
