@@ -4,36 +4,36 @@
         {
           "imagem":"./assets/xburguer.png",
           "nome": "X-Burger",
-          "ingredientes": ["pão", "hambúrguer", "queijo", "alface", "tomate", "maionese"],
+          "ingredientes": ["Pão", "hambúrguer", "queijo", "alface", "tomate", "maionese"],
           "valor": "R$ 18,50"
         },
         {
           "imagem":"./assets/xburguer.png",
           "nome": "X-Tudo",
-          "ingredientes": ["pão", "hambúrguer", "queijo", "bacon", "ovo", "alface", "tomate", "maionese"],
+          "ingredientes": ["Pão", "hambúrguer", "queijo", "bacon", "ovo", "alface", "tomate", "maionese"],
           "valor": "R$ 22,00"
         },
         {
           "imagem":"./assets/xburguer.png",
           "nome": "X-Frango",
-          "ingredientes": ["pão", "filé de frango", "queijo", "alface", "tomate", "maionese"],
+          "ingredientes": ["Pão", "filé de frango", "queijo", "alface", "tomate", "maionese"],
           "valor": "R$ 20,00"
         }
       ],
       "porcoes": [
         {
           "nome": "Porção de Fritas",
-          "ingredientes": ["batata", "óleo", "sal"],
+          "ingredientes": ["Batata", "óleo", "sal"],
           "valor": "R$ 12,00"
         },
         {
           "nome": "Porção de Onion Rings",
-          "ingredientes": ["cebola", "massa empanada", "óleo"],
+          "ingredientes": ["Cebola", "massa empanada", "óleo"],
           "valor": "R$ 15,00"
         },
         {
           "nome": "Porção de Batata Doce",
-          "ingredientes": ["batata doce", "óleo", "sal"],
+          "ingredientes": ["Batata doce", "óleo", "sal"],
           "valor": "R$ 14,00"
         }
       ],
