@@ -58,63 +58,46 @@
               <h3 class="cardTitle">X-Burger</h3>
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
-              <button class="addBtn">Adicionar ao carrinho</button>
+
+              <button class="addBtn" onclick="adicionarAoCarrinho('X-Burger')">Adicionar ao carrinho</button>
             </div>
           </div>
   
           <div class="card">
             <img class="cardImg" src="./assets/xburguer.png" alt="" />
             <div class="card-content">
-              <h3 class="cardTitle">X-Burger</h3>
+              <h3 class="cardTitle">X-Tudo</h3>
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
-              <button class="addBtn">Adicionar ao carrinho</button>
+
+              <button class="addBtn" onclick="adicionarAoCarrinho('X-Tudo')">Adicionar ao carrinho</button>
             </div>
           </div>
   
           <div class="card">
             <img class="cardImg" src="./assets/xburguer.png" alt="" />
             <div class="card-content">
-              <h3 class="cardTitle">X-Burger</h3>
+              <h3 class="cardTitle">X-Frango</h3>
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
-              <button class="addBtn">Adicionar ao carrinho</button>
+
+              <div class="produto">
+                <button class="addBtn" onclick="adicionarAoCarrinho('X-Frango')">Adicionar ao carrinho</button>
+            </div>
+            
             </div>
           </div>
-  
-          <div class="card">
-            <img class="cardImg" src="./assets/xburguer.png" alt="" />
-            <div class="card-content">
-              <h3 class="cardTitle">X-Burger</h3>
-              <p class="cardIngredientes"></p>
-              <p class="cardValor"></p>
-              <button class="addBtn">Adicionar ao carrinho</button>
-            </div>
-          </div>
-  
-          <div class="card">
-            <img class="cardImg" src="./assets/xburguer.png" alt="" />
-            <div class="card-content">
-              <h3 class="cardTitle">X-Burger</h3>
-              <p class="cardIngredientes"></p>
-              <p class="cardValor"></p>
-              <button class="addBtn">Adicionar ao carrinho</button>
-            </div>
-          </div>
-  
-          <div class="card">
-            <img class="cardImg" src="./assets/xburguer.png" alt="" />
-            <div class="card-content">
-              <h3 class="cardTitle">X-Burger</h3>
-              <p class="cardIngredientes"></p>
-              <p class="cardValor"></p>
-              <button class="addBtn">Adicionar ao carrinho</button>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
 
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
+
+    <script>
+      function adicionarAoCarrinho(produto) {
+        window.location.href = `produto.html?nome=${encodeURIComponent(produto)}`;
+    }
+    </script>
   </body>
 </html>
