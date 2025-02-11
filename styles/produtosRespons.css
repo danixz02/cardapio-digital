@@ -1,0 +1,21 @@
+
+@media only screen and (max-width: 768px) {
+    .produto {
+        flex-direction: column;
+        margin: 8px;
+    }
+
+    #imgProd {
+        width: 100%;
+    }
+
+    .infoProd > h1 {
+        font-size: 1.5rem;
+    }
+
+    .infoProd {
+        width: 100%;
+        padding: 0;
+        margin-top: 5px;
+    }
+}
