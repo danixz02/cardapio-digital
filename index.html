@@ -40,7 +40,6 @@
     </div>
 
     <section id="lanches">
-      
       <div class="text">
         <h1>Lanches</h1>
         <a href="#" id="verMais">Ver mais</a>
@@ -50,7 +49,7 @@
           <button id="prevBtn">&#10094;</button>
           <button id="nextBtn">&#10095;</button>
         </div>
- 
+
         <div class="carousel">
           <div class="card">
             <img class="cardImg" src="./assets/xburguer.png" alt="" />
@@ -59,10 +58,15 @@
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
 
-              <button class="addBtn" onclick="adicionarAoCarrinho('X-Burger')">Adicionar ao carrinho</button>
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('X-Burger', 'lanches')"
+              >
+                Adicionar ao carrinho
+              </button>
             </div>
           </div>
-  
+
           <div class="card">
             <img class="cardImg" src="./assets/xburguer.png" alt="" />
             <div class="card-content">
@@ -70,10 +74,15 @@
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
 
-              <button class="addBtn" onclick="adicionarAoCarrinho('X-Tudo')">Adicionar ao carrinho</button>
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('X-Tudo', 'lanches')"
+              >
+                Adicionar ao carrinho
+              </button>
             </div>
           </div>
-  
+
           <div class="card">
             <img class="cardImg" src="./assets/xburguer.png" alt="" />
             <div class="card-content">
@@ -81,13 +90,81 @@
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
 
-              <div class="produto">
-                <button class="addBtn" onclick="adicionarAoCarrinho('X-Frango')">Adicionar ao carrinho</button>
+              <div class="lanches">
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('X-Frango', 'lanches')"
+                >
+                  Adicionar ao carrinho
+                </button>
+              </div>
             </div>
-            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="porcoes">
+      <div class="text">
+        <h1>Porções</h1>
+        <a href="#" id="verMais">Ver mais</a>
+      </div>
+      <div class="carousel-container">
+        <div class="controls">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+
+        <div class="carousel">
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Porção de Fritas</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Porção de Fritas', 'porcoes')"
+              >
+                Adicionar ao carrinho
+              </button>
             </div>
           </div>
 
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Porção de Onion Rings</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Porção de Onion Rings', 'porcoes')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Porção de Batata Doce</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <div class="porcoes">
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Porção de Batata Doce', 'porcoes')"
+                >
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -95,9 +172,21 @@
     <script src="./scripts/script.js"></script>
 
     <script>
-      function adicionarAoCarrinho(produto) {
-        window.location.href = `produto.html?nome=${encodeURIComponent(produto)}`;
-    }
+      function adicionarAoCarrinho(nome, categoria) {
+        const paginas = {
+          lanches: "lanches.html",
+          porcoes: "porcoes.html",
+        };
+
+        const urlPagina = paginas[categoria];
+
+        if (urlPagina) {
+          // Redirecionar para a nova página
+          window.location.href = `${urlPagina}?nome=${encodeURIComponent(nome)}`;
+        } else {
+          console.error("Categoria desconhecida:", categoria);
+        }
+      }
     </script>
   </body>
 </html>
