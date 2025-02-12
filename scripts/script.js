@@ -23,6 +23,8 @@ const nextBtn = document.getElementById('nextBtn');
 
 let scrollAmount = 0;
 const scrollStep = 210;  // Define o quanto rola para cada clique
+let isDragging = false;
+let startx, scrollLeft;
 
 nextBtn.addEventListener('click', () => {
     scrollAmount += scrollStep;
@@ -40,4 +42,29 @@ prevBtn.addEventListener('click', () => {
     carousel.style.transform = `translateX(-${scrollAmount}px)`;
 });
 
+
+carousel.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startx = e.touches[0].pagex - carousel.offsetLeft;
+    scrollLeft = scrollAmount;
+})
   
+
+carousel.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pagex - carousel.offsetLeft;
+    const walk = (x - startx ) * 1.5;
+    scrollAmount = scrollLeft - walk;
+
+    if (scrollAmount < 0) scrollAmount = 0;
+    if (scrollAmount > carousel.scrollWidth - carousel.clientWidth) {
+        scrollAmount = carousel.scrollWidth - carousel.clientWidth;
+    }
+
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
+})
+
+
+carousel.addEventListener('touchend', () => {
+    isDragging = false;
+})

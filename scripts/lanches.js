@@ -4,7 +4,7 @@ function obterParametro(nome) {
 }
 
 function carregarProduto() {
-    const nomeProduto = obterParametro('nome');
+    const nomeLanche = obterParametro('nome');
 
     fetch("cardapio.json")
         .then(response => response.json())
@@ -13,16 +13,16 @@ function carregarProduto() {
             const lanches = data.cardapio.lanches;
 
             // Procura pelo produto correspondente
-            const produto = lanches.find(lanche => lanche.nome === nomeProduto);
+            const infoLanches = lanches.find(lanche => lanche.nome === nomeLanche);
 
-            if (produto) {
-                document.getElementById('titulo').innerText = produto.nome;
-                document.getElementById('imgProd').src = produto.imagem;
-                document.getElementById('ingredientes').innerText = produto.ingredientes.join(", ");
-                document.getElementById('valor').innerText = produto.valor;
+            if (infoLanches) {
+                document.getElementById('titulo').innerText = infoLanches.nome;
+                document.getElementById('imgProd').src = infoLanches.imagem;
+                document.getElementById('ingredientes').innerText = infoLanches.ingredientes.join(", ");
+                document.getElementById('valor').innerText = infoLanches.valor;
 
                 // Atualiza o título da aba
-                document.title = produto.nome + " - Detalhes do Produto";
+                document.title = infoLanches.nome + " - Detalhes do Produto";
             } else {
                 document.getElementById('titulo').innerText = "Produto não encontrado";
                 document.getElementById('valor').innerText = "";
