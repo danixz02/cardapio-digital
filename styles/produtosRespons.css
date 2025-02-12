@@ -5,15 +5,16 @@
         margin: 8px;
     }
 
-    #imgProd {
-        width: 100%;
+    #imgProd, #imgProdPor {
+        width: 100%;;
     }
 
-    .infoProd > h1 {
-        font-size: 1.5rem;
+    .infoProd > h1, .infoPor > h1 {
+        font-size: 1.9rem;
+        margin-bottom: 10px;
     }
 
-    .infoProd {
+    .infoProd, .infoPor {
         width: 100%;
         padding: 0;
         margin-top: 5px;
