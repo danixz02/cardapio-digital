@@ -22,6 +22,7 @@
       ],
       "porcoes": [
         {
+          "imagem":"https://yorkgrill.com.br/wp-content/uploads/2022/06/porcao-de-batata-frita.png",
           "nome": "Porção de Fritas",
           "ingredientes": ["Batata", "óleo", "sal"],
           "valor": "R$ 12,00"
