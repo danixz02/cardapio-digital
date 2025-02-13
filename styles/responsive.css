@@ -68,4 +68,9 @@
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
     }                               
+
+    
+    .controls {
+        display: none;
+    }
 }

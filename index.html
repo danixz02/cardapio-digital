@@ -169,13 +169,80 @@
       </div>
     </section>
 
+    <section id="bebidasAlcoolicas">
+      <div class="text">
+        <h1>Bebidas Alcoólicas</h1>
+        <a href="#" id="verMais">Ver mais</a>
+      </div>
+      <div class="carousel-container">
+        <div class="controls">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+
+        <div class="carousel">
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Cerveja Lata</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Cerveja Lata', 'bebidasAlcoolicas')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Caipirinha</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Caipirinha', 'bebidasAlcoolicas')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Vodka</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <div class="bebidasAlcoolicas">
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Vodka', 'bebidasAlcoolicas')"
+                >
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/lanches.js"></script>
 
     <script>
       function adicionarAoCarrinho(nome, categoria) {
         const paginas = {
           lanches: "lanches.html",
           porcoes: "porcoes.html",
+          bebidasAlcoolicas: "bebidasAlcoolicas.html",
         };
 
         const urlPagina = paginas[categoria];

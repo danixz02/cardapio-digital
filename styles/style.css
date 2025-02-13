@@ -101,7 +101,7 @@ h1 {
   overflow: hidden;
 }
 
-.carousel {
+.carousel, .carouselPor {
   display: flex;
   transition: transform 0.3s ease-in-out;
 }
@@ -167,6 +167,8 @@ h1 {
     margin: 24px;
 }
 
+
+
 #verMais {
   float: right;
   margin-right: 14px;
@@ -181,7 +183,9 @@ h1 {
 }
 
 #prevBtn,
-#nextBtn {
+#nextBtn, 
+#prevBtnPor, 
+#nextBtnPor {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -201,11 +205,11 @@ h1 {
   justify-content: space-between;
 }
 
-#prevBtn {
+#prevBtn, #prevBtnPor {
   margin-left: 10px;
 }
 
-#nextBtn {
+#nextBtn, #nextBtnPor {
   margin-right: 10px;
 }
 
