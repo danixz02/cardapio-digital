@@ -1,7 +1,8 @@
 
 @media only screen and (max-width: 768px) {
     .navMenu {
-        position: fixed;
+        position: absolute;
+        z-index: 99;
         left: 100%;
         top: 5rem;
         flex-direction: column;
@@ -71,6 +72,6 @@
 
     
     .controls {
-        display: none;
+       display: none;
     }
 }

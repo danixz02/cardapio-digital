@@ -69,10 +69,37 @@
           "valor": "R$ 3,00"
         }
       ],
-      "mais_pedidos": [
-        "X-Tudo",
-        "Porção de Fritas",
-        "Cerveja Lata"
+      "maisPedidos": [
+        {
+          "imagem":"./assets/xburguer.png",
+          "nome": "X-Tudo",
+          "ingredientes": ["Pão", "hambúrguer", "queijo", "bacon", "ovo", "alface", "tomate", "maionese"],
+          "valor": "R$ 22,00"
+        },
+        {
+          "nome": "Refrigerante Lata",
+          "valor": "R$ 5,00"
+        },
+        {
+          "nome": "Suco Natural",
+          "valor": "R$ 8,00"
+        },
+        {
+          "imagem":"./assets/xburguer.png",
+          "nome": "Caipirinha",
+          "valor": "R$ 15,00"
+        },
+        {
+          "imagem":"https://yorkgrill.com.br/wp-content/uploads/2022/06/porcao-de-batata-frita.png",
+          "nome": "Porção de Fritas",
+          "ingredientes": ["Batata", "óleo", "sal"],
+          "valor": "R$ 12,00"
+        },
+        {
+          "nome": "Porção de Onion Rings",
+          "ingredientes": ["Cebola", "massa empanada", "óleo"],
+          "valor": "R$ 15,00"
+        }
       ]
     }
   }

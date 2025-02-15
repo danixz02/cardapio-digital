@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./pages/styles/style.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <link
       rel="stylesheet"
@@ -17,13 +17,16 @@
         <a href="#" class="navLogo">LOGO</a>
         <ul class="navMenu">
           <li class="navItem">
-            <a href="#" class="navLink">Iníco</a>
+            <a href="index.html" class="navLink">Iníco</a>
           </li>
           <li class="navItem">
             <a href="#" class="navLink">Mais Pedidos</a>
           </li>
           <li class="navItem">
             <a href="#" class="navLink">Cardápio</a>
+          </li>
+          <li class="navItem">
+            <a href="#" class="navLink">Carrinho</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -33,6 +36,128 @@
         </div>
       </nav>
     </header>
+
+    <div id="banner">
+      <!-- <img src="./assets/banner.png" alt="banner" /> -->
+      <span></span>
+    </div>
+
+    <section id="MaisPedidos">
+      <div class="text">
+        <h1>Mais Pedidos</h1>
+        <a href="#" id="verMais">Ver mais</a>
+      </div>
+      <div class="carousel-container">
+        <div class="controls">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+
+        <div class="carousel">
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">X-Tudo</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('X-Tudo', 'MaisPedidos')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Suco Natural</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Suco Natural', 'MaisPedidos')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Caipirinha</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Caipirinha', 'MaisPedidos')"
+                >
+                  Adicionar ao carrinho
+                </button>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Porção de Fritas</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Porção de Fritas', 'MaisPedidos')"
+                >
+                  Adicionar ao carrinho
+                </button>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Porção de Onion Rings</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Porção de Onion Rings', 'MaisPedidos')"
+                >
+                  Adicionar ao carrinho
+                </button>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Refrigerante Lata</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <div class="MaisPedidos">
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Refrigerante Lata', 'MaisPedidos')"
+                >
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <div id="banner">
       <!-- <img src="./assets/banner.png" alt="banner" /> -->
@@ -169,6 +294,12 @@
       </div>
     </section>
 
+
+    <div id="banner">
+      <!-- <img src="./assets/banner.png" alt="banner" /> -->
+      <span></span>
+    </div>
+
     <section id="bebidasAlcoolicas">
       <div class="text">
         <h1>Bebidas Alcoólicas</h1>
@@ -234,15 +365,83 @@
       </div>
     </section>
 
+    <section id="bebidasNaoAlcoolicas">
+      <div class="text">
+        <h1>Bebidas</h1>
+        <a href="#" id="verMais">Ver mais</a>
+      </div>
+      <div class="carousel-container">
+        <div class="controls">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+
+        <div class="carousel">
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Refrigerante Lata</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Refrigerante Lata', 'bebidasNaoAlcoolicas')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Suco Natural</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <button
+                class="addBtn"
+                onclick="adicionarAoCarrinho('Suco Natural', 'bebidasNaoAlcoolicas')"
+              >
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <div class="card-content">
+              <h3 class="cardTitle">Água Mineral</h3>
+              <p class="cardIngredientes"></p>
+              <p class="cardValor"></p>
+
+              <div class="bebidasNaoAlcoolicas">
+                <button
+                  class="addBtn"
+                  onclick="adicionarAoCarrinho('Água Mineral', 'bebidasNaoAlcoolicas')"
+                >
+                  Adicionar ao carrinho
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <script src="./scripts/script.js"></script>
     <script src="./scripts/lanches.js"></script>
 
     <script>
       function adicionarAoCarrinho(nome, categoria) {
         const paginas = {
-          lanches: "lanches.html",
+          lanches: "./pages/lanches.html",
           porcoes: "porcoes.html",
           bebidasAlcoolicas: "bebidasAlcoolicas.html",
+          bebidasNaoAlcoolicas: "bebidasNaoAlcoolicas.html",
+          MaisPedidos: "MaisPedidos.html",
         };
 
         const urlPagina = paginas[categoria];
