@@ -3,34 +3,46 @@ function obterParametro(nome) {
     return urlParams.get(nome);
 }
 
+function atualizarElemento(id, dados) {
+    const elemento = document.getElementById(id);
+    if (!elemento) return; // Evita erros se o elemento não existir no HTML
+
+    if (dados && dados.length) {
+        elemento.innerText = Array.isArray(dados) ? dados.join(", ") : dados;
+        elemento.style.display = "block"; // Garante visibilidade
+    } else {
+        elemento.style.display = "none"; // Oculta se não houver dados
+    }
+}
+
 function carregarProduto() {
     const nomeBebidaAl = obterParametro('nome');
 
     fetch("cardapio.json")
         .then(response => response.json())
         .then(data => {
-            // Acessa a lista de lanches dentro do cardápio
-            const bebidasAlcoolica = data.cardapio.bebidasAlcoolicas;
-
-            // Procura pelo produto correspondente
-            const infobeBidasAlcoolica = bebidasAlcoolica.find(lanche => lanche.nome === nomeBebidaAl);
+            const bebidasAlcoolicas = data.cardapio.bebidasAlcoolicas;
+            const infobeBidasAlcoolica = bebidasAlcoolicas.find(bebida => bebida.nome === nomeBebidaAl);
 
             if (infobeBidasAlcoolica) {
                 document.getElementById('tituloBebAlc').innerText = infobeBidasAlcoolica.nome;
                 document.getElementById('imgProdBebAlc').src = infobeBidasAlcoolica.imagem;
-                /* document.getElementById('ingredientesBebAlc').innerText = infobeBidasAlcoolica.ingredientes.join(", "); */
                 document.getElementById('valorBebAlc').innerText = infobeBidasAlcoolica.valor;
 
-                // Atualiza o título da aba
-                document.title = infobeBidasAlcoolica.nome + " - Detalhes do Produto";
+                atualizarElemento('ingredientesBebAlc', infobeBidasAlcoolica.ingredientes);
+                atualizarElemento('tipoBebAlc', infobeBidasAlcoolica.tipo);
+
+                document.title = `${infobeBidasAlcoolica.nome} - Detalhes do Produto`;
             } else {
                 document.getElementById('tituloBebAlc').innerText = "Produto não encontrado";
                 document.getElementById('valorBebAlc').innerText = "";
+                atualizarElemento('ingredientesBebAlc', null);
+                atualizarElemento('tipoBebAlc', null);
             }
         })
         .catch(error => {
             console.error("Erro ao carregar o JSON:", error);
-            document.getElementById('titulo').innerText = "Erro ao carregar os detalhes do produto.";
+            document.getElementById('tituloBebAlc').innerText = "Erro ao carregar os detalhes do produto.";
         });
 }
 

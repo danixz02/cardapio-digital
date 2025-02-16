@@ -40,7 +40,7 @@
     </header>
 
     <div id="banner">
-      <img src="./assets/img1.png" alt="banner" />
+      <img src="./assets/lanche01.jpg" alt="banner" />
     </div>
 
     <section id="MaisPedidos">
@@ -88,7 +88,7 @@
           </div>
 
           <div class="card">
-            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <img class="cardImg" src="./assets/caipirinha.jpg" alt="" />
             <div class="card-content">
               <h3 class="cardTitle">Caipirinha</h3>
               <p class="cardIngredientes"></p>
@@ -312,15 +312,15 @@
 
         <div class="carousel">
           <div class="card">
-            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <img class="cardImg" src="./assets/brahma.jpg" alt="" />
             <div class="card-content">
-              <h3 class="cardTitle">Cerveja Lata</h3>
+              <h3 class="cardTitle">Cerveja brahma</h3>
               <p class="cardIngredientes"></p>
               <p class="cardValor"></p>
 
               <button
                 class="addBtn"
-                onclick="adicionarAoCarrinho('Cerveja Lata', 'bebidasAlcoolicas')"
+                onclick="adicionarAoCarrinho('Cerveja brahma', 'bebidasAlcoolicas')"
               >
                 Adicionar ao carrinho
               </button>
@@ -328,7 +328,7 @@
           </div>
 
           <div class="card">
-            <img class="cardImg" src="./assets/xburguer.png" alt="" />
+            <img class="cardImg" src="./assets/caipirinha.jpg" alt="" />
             <div class="card-content">
               <h3 class="cardTitle">Caipirinha</h3>
               <p class="cardIngredientes"></p>
@@ -436,11 +436,11 @@
     <script>
       function adicionarAoCarrinho(nome, categoria) {
         const paginas = {
+          MaisPedidos: "MaisPedidos.html",
           lanches: "lanches.html",
           porcoes: "porcoes.html",
           bebidasAlcoolicas: "bebidasAlcoolicas.html",
           bebidasNaoAlcoolicas: "bebidasNaoAlcoolicas.html",
-          MaisPedidos: "MaisPedidos.html",
         };
 
         const urlPagina = paginas[categoria];
