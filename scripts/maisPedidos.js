@@ -18,7 +18,7 @@ function carregarProduto() {
             if (infomaisPedidos) {
                 document.getElementById('tituloMaisPed').innerText = infomaisPedidos.nome;
                 document.getElementById('imgProdMaisPed').src = infomaisPedidos.imagem;
-                /* document.getElementById('ingredientesMaisPed').innerText = infomaisPedidos.ingredientes.join(", "); */
+                document.getElementById('ingredientesMaisPed').innerText = infomaisPedidos.ingredientes.join(", ");
                 document.getElementById('valorMaisPed').innerText = infomaisPedidos.valor;
 
                 // Atualiza o título da aba
