@@ -1,12 +1,12 @@
 
 @media only screen and (max-width: 768px) {
     .navMenu {
-        position: absolute;
+        position: fixed;
         z-index: 99;
         left: 100%;
-        top: 5rem;
+        top: 4rem;
         flex-direction: column;
-        background-color: #704c3b;
+        background-color: var(--nav-color);
         width: 100%;
         border-radius: 10px;
         text-align: center;
