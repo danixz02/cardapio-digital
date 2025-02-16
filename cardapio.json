@@ -40,13 +40,15 @@
       ],
       "bebidasAlcoolicas": [
         {
-          "imagem":"./assets/xburguer.png",
-          "nome": "Cerveja Lata",
+          "imagem":"/assets/brahma.jpg",
+          "tipo": ["Cerveja Brahma Lata 473ml", "Cerveja Brahma Litrão 1000ml"],
+          "nome": "Cerveja brahma",
           "valor": "R$ 7,00"
         },
         {
-          "imagem":"./assets/xburguer.png",
+          "imagem":"./assets/caipirinha.jpg",
           "nome": "Caipirinha",
+          "ingredientes": ["Limão", "gelo", "açúcar", "cachaça"],
           "valor": "R$ 15,00"
         },
         {
@@ -85,8 +87,9 @@
           "valor": "R$ 8,00"
         },
         {
-          "imagem":"./assets/xburguer.png",
+          "imagem":"./assets/caipirinha.jpg",
           "nome": "Caipirinha",
+          "ingredientes": ["Limão", "gelo", "açúcar", "cachaça"],
           "valor": "R$ 15,00"
         },
         {
